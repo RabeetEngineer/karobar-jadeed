@@ -1,0 +1,148 @@
+export type Industry = {
+  accent: string;
+  built: string;
+  detail: string;
+  image: string;
+  outcomes: string[];
+  result: string;
+  slug: string;
+  tags: string[];
+  title: string;
+};
+
+export const industries: Industry[] = [
+  {
+    title: "Clinics & Healthcare",
+    slug: "clinics-healthcare",
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80",
+    built: "Appointments, patient records, reminders",
+    result: "Fewer missed calls",
+    tags: ["Website", "Booking", "CRM"],
+    accent: "from-emerald-500 to-teal-600",
+    detail: "Clinic ke liye professional website, online appointment form, patient inquiry tracking aur WhatsApp reminders.",
+    outcomes: ["Patients appointment book kar sakte hain", "Staff ko missed calls kam milti hain", "Follow-ups automatic ho jate hain"],
+  },
+  {
+    title: "Restaurants & Cafes",
+    slug: "restaurants-cafes",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    built: "Menu, WhatsApp orders, repeat offers",
+    result: "Faster order handling",
+    tags: ["WhatsApp", "Menu", "Offers"],
+    accent: "from-orange-500 to-amber-500",
+    detail: "Restaurant ke liye digital menu, WhatsApp ordering, order alerts aur repeat customer offers.",
+    outcomes: ["Customers menu easily dekhte hain", "Orders WhatsApp par organized aate hain", "Repeat buyers ko offers bhej sakte hain"],
+  },
+  {
+    title: "Schools & Institutes",
+    slug: "schools-institutes",
+    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+    built: "Admission forms, parent follow-ups",
+    result: "Better inquiry tracking",
+    tags: ["Admissions", "CRM", "Reminders"],
+    accent: "from-violet-500 to-blue-600",
+    detail: "School ke liye admission inquiry forms, parent database, fee reminders aur follow-up system.",
+    outcomes: ["Admission leads one place par save hoti hain", "Parents ko timely follow-up milta hai", "Team ko inquiry status clear rehta hai"],
+  },
+  {
+    title: "Real Estate",
+    slug: "real-estate",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    built: "Property pages, buyer lead pipeline",
+    result: "Serious buyers first",
+    tags: ["Landing Page", "Leads", "SEO"],
+    accent: "from-blue-500 to-cyan-500",
+    detail: "Real estate ke liye property landing pages, buyer lead forms, WhatsApp follow-up aur pipeline.",
+    outcomes: ["Serious buyers identify hote hain", "Property inquiries track hoti hain", "Follow-up manual nahi rehta"],
+  },
+  {
+    title: "E-commerce Stores",
+    slug: "ecommerce-stores",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+    built: "Storefront, product flow, order alerts",
+    result: "Cleaner online selling",
+    tags: ["Store", "Products", "Orders"],
+    accent: "from-fuchsia-500 to-violet-600",
+    detail: "Online store ke liye product pages, order forms, payment flow aur customer notifications.",
+    outcomes: ["Products professional look mein show hote hain", "Orders organized receive hote hain", "Customers ko timely updates milte hain"],
+  },
+  {
+    title: "Service Businesses",
+    slug: "service-businesses",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+    built: "Lead forms, estimates, follow-ups",
+    result: "More organized sales",
+    tags: ["Leads", "CRM", "Reports"],
+    accent: "from-slate-700 to-emerald-600",
+    detail: "Service businesses ke liye website, quote request forms, lead CRM aur follow-up reminders.",
+    outcomes: ["New leads miss nahi hoti", "Quotes aur follow-ups organized rehte hain", "Sales process clear hota hai"],
+  },
+  {
+    title: "Super Stores",
+    slug: "super-stores",
+    image: "https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=1200&q=80",
+    built: "Promotions, loyalty, inventory flows",
+    result: "Better customer retention",
+    tags: ["Promos", "Loyalty", "Reports"],
+    accent: "from-emerald-500 to-lime-500",
+    detail: "Super store ke liye promotions, customer lists, loyalty reminders aur basic inventory workflows.",
+    outcomes: ["Promotions customers tak jaldi jati hain", "Repeat buyers build hote hain", "Sales reports easy ho jati hain"],
+  },
+  {
+    title: "Gyms & Fitness",
+    slug: "gyms-fitness",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    built: "Membership pages, reminders, leads",
+    result: "More trial bookings",
+    tags: ["Membership", "Leads", "Reminders"],
+    accent: "from-red-500 to-orange-500",
+    detail: "Gym ke liye membership landing page, trial booking forms, WhatsApp reminders aur lead tracking.",
+    outcomes: ["Trial leads capture hoti hain", "Membership reminders automatic hote hain", "Packages clear show hote hain"],
+  },
+  {
+    title: "Salons & Beauty",
+    slug: "salons-beauty",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+    built: "Booking, service menu, reminders",
+    result: "More repeat visits",
+    tags: ["Booking", "Menu", "WhatsApp"],
+    accent: "from-pink-500 to-fuchsia-500",
+    detail: "Salon ke liye service menu, online booking, appointment reminders aur customer follow-ups.",
+    outcomes: ["Appointments easy book hoti hain", "Services aur prices clear hote hain", "Repeat visits improve hoti hain"],
+  },
+  {
+    title: "Travel Agencies",
+    slug: "travel-agencies",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
+    built: "Package pages, inquiry forms, CRM",
+    result: "Cleaner trip inquiries",
+    tags: ["Packages", "Leads", "CRM"],
+    accent: "from-sky-500 to-blue-600",
+    detail: "Travel agency ke liye package landing pages, inquiry forms, WhatsApp follow-up aur CRM.",
+    outcomes: ["Trip inquiries organized hoti hain", "Packages attractive show hote hain", "Follow-ups timely hoti hain"],
+  },
+  {
+    title: "Legal & Consultants",
+    slug: "legal-consultants",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+    built: "Consultation pages, booking, leads",
+    result: "More qualified inquiries",
+    tags: ["Consultation", "Booking", "Leads"],
+    accent: "from-slate-800 to-blue-700",
+    detail: "Consultants ke liye credibility website, consultation booking forms, lead capture aur follow-up.",
+    outcomes: ["Qualified inquiries aati hain", "Services clearly explain hoti hain", "Consultation booking simple hoti hai"],
+  },
+  {
+    title: "Auto Workshops",
+    slug: "auto-workshops",
+    image: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80",
+    built: "Service booking, reminders, reviews",
+    result: "More service appointments",
+    tags: ["Booking", "Reviews", "WhatsApp"],
+    accent: "from-zinc-700 to-emerald-600",
+    detail: "Workshop ke liye service booking, WhatsApp reminders, reviews aur customer follow-up system.",
+    outcomes: ["Service appointments organize hoti hain", "Customers ko reminders milte hain", "Reviews improve hote hain"],
+  },
+];
+
+export const featuredIndustries = industries.slice(0, 6);

@@ -1,0 +1,74 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 100% 99%;
+    --foreground: 225 61% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 225 61% 13%;
+    --primary: 151 86% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 221 91% 58%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 216 44% 95%;
+    --muted-foreground: 222 24% 41%;
+    --accent: 265 92% 64%;
+    --accent-foreground: 0 0% 100%;
+    --border: 219 36% 88%;
+    --input: 219 36% 88%;
+    --ring: 151 86% 36%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-sans antialiased;
+    color: hsl(var(--foreground));
+  }
+
+  ::selection {
+    @apply bg-emerald-300 text-slate-950;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto box-border w-full max-w-[1536px] px-5 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .glass-panel {
+    @apply border border-white/70 bg-white/75 shadow-glass backdrop-blur-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 via-violet-600 to-emerald-500 bg-clip-text text-transparent;
+  }
+
+  .section-kicker {
+    @apply text-sm font-bold uppercase tracking-[0.18em] text-emerald-600;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(37, 99, 235, 0.075) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(16, 185, 129, 0.07) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
