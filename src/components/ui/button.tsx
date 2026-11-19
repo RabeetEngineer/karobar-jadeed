@@ -11,8 +11,8 @@ const buttonVariants = cva(
         default:
           "bg-gradient-to-r from-emerald-500 via-emerald-600 to-blue-600 text-white shadow-glow hover:-translate-y-0.5 hover:shadow-lift",
         secondary:
-          "border border-white/80 bg-white/90 text-slate-950 shadow-glass backdrop-blur hover:-translate-y-0.5 hover:bg-white",
-        ghost: "text-slate-700 hover:bg-slate-100 hover:text-slate-950",
+          "border border-white/80 bg-white/90 text-slate-900 shadow-glass backdrop-blur hover:-translate-y-0.5 hover:bg-white",
+        ghost: "text-slate-700 hover:bg-slate-100 hover:text-slate-900",
         dark: "bg-slate-950 text-white hover:-translate-y-0.5 hover:bg-slate-800",
       },
       size: {

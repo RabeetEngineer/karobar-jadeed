@@ -35,7 +35,7 @@ export function FAQ() {
       <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
         <div>
           <p className="section-kicker">FAQ</p>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
+          <h2 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
             Questions business owners usually ask.
           </h2>
         </div>
@@ -47,7 +47,7 @@ export function FAQ() {
               className="overflow-hidden rounded-[22px] border border-slate-100 bg-white shadow-sm"
             >
               <Accordion.Header>
-                <Accordion.Trigger className="group flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-base font-black text-slate-950">
+                <Accordion.Trigger className="group flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-base font-extrabold text-slate-900">
                   {faq.question}
                   <ChevronDown className="h-5 w-5 shrink-0 text-emerald-600 transition group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>

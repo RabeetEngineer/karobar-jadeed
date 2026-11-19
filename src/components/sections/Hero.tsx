@@ -1,16 +1,10 @@
-import { ArrowRight, CalendarDays, CheckCircle2, Globe2, Play, Sparkles, Star } from "lucide-react";
+import { ArrowRight, CalendarDays, CheckCircle2, Globe2, Play, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { HeroVisual } from "@/components/hero/HeroVisual";
 import { contact } from "@/config/contact";
 
-const avatars = [
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=160&q=80",
-  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80",
-];
+const trustPoints = ["Professional Websites", "AI Chatbots & Automation", "CRM & Lead Tracking", "Pakistan & Global Clients"];
 
 export function Hero() {
   return (
@@ -28,27 +22,26 @@ export function Hero() {
         >
           <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-xs font-extrabold text-slate-900 shadow-sm ring-1 ring-emerald-100 sm:mb-7">
             <Sparkles className="h-4 w-4 text-emerald-600" />
-            Digital systems for Pakistani and international clients
+            Pakistan-based digital solutions company serving local and international clients
           </div>
 
-          <h1 className="max-w-full break-words font-display text-[2rem] font-black leading-[1.08] tracking-tight text-slate-950 sm:max-w-4xl sm:text-5xl lg:text-[4rem] lg:leading-[1.04] xl:text-[4.35rem]">
-            <span className="block sm:inline">Apne Karobar ko </span>
-            <span className="block sm:inline">Jadeed Karen </span>
+          <h1 className="max-w-full break-words font-display text-[2rem] font-extrabold leading-[1.08] tracking-tight text-slate-900 sm:max-w-4xl sm:text-5xl lg:text-[4rem] lg:leading-[1.04] xl:text-[4.35rem]">
+            <span className="block sm:inline">Website Development, </span>
+            <span className="block sm:inline">AI Automation & </span>
             <span className="block bg-gradient-to-r from-emerald-600 via-teal-500 to-blue-600 bg-clip-text text-transparent sm:inline">
-              Karobar Jadeed
-            </span>{" "}
-            <span className="block sm:inline">ke Zariye.</span>
+              Custom Software Solutions
+            </span>
           </h1>
 
           <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-slate-600 sm:mt-7 sm:text-lg sm:leading-8">
-            We build websites, AI automation, WhatsApp follow-ups and CRM systems for growing businesses in Pakistan
-            and abroad. Aapka process simple, fast aur trackable ho jata hai.
+            Karobar Jadeed helps businesses in Pakistan and worldwide build professional websites, AI chatbots,
+            WhatsApp automation, CRM systems, and custom software that generate leads and simplify daily operations.
           </p>
 
-          <div className="mt-7 hidden gap-3 sm:grid sm:grid-cols-3">
-            {["Professional Website", "WhatsApp Follow-ups", "Pakistan + Global Clients"].map((item) => (
+          <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            {trustPoints.map((item) => (
               <div key={item} className="flex min-h-12 items-center gap-2 rounded-2xl border border-white/80 bg-white/75 px-4 py-3 text-sm font-extrabold leading-5 text-slate-800 shadow-sm backdrop-blur">
-                {item.includes("Global") ? (
+                {item.includes("Global") || item.includes("Pakistan") ? (
                   <Globe2 className="h-4 w-4 shrink-0 text-blue-600" />
                 ) : (
                   <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600" />
@@ -71,32 +64,9 @@ export function Hero() {
                 <span className="grid h-7 w-7 place-items-center rounded-full bg-emerald-50 text-emerald-700">
                   <Play className="h-4 w-4 fill-current" />
                 </span>
-                See Our Services
+                View Our Services
               </a>
             </Button>
-          </div>
-
-          <div className="mt-7 flex flex-wrap items-center gap-4 sm:mt-9 sm:gap-6">
-            <div className="flex -space-x-3">
-              {avatars.map((avatar, index) => (
-                <img
-                  key={avatar}
-                  src={avatar}
-                  alt=""
-                  className="h-10 w-10 rounded-full border-4 border-white object-cover shadow-sm sm:h-12 sm:w-12"
-                  style={{ zIndex: avatars.length - index }}
-                />
-              ))}
-            </div>
-            <div>
-              <p className="font-extrabold text-slate-950">100+ happy businesses</p>
-              <p className="text-sm font-medium text-slate-600">trust Karobar Jadeed</p>
-            </div>
-            <div className="hidden items-center gap-1 text-amber-400 sm:flex">
-              {Array.from({ length: 5 }).map((_, index) => (
-                <Star key={index} className="h-5 w-5 fill-current" />
-              ))}
-            </div>
           </div>
         </motion.div>
 

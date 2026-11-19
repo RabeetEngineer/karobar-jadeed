@@ -20,7 +20,7 @@ export function TrustStrip() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="px-2 text-sm font-extrabold leading-6 text-slate-950">Businesses we help grow</p>
+          <p className="px-2 text-sm font-extrabold leading-6 text-slate-900">Businesses we help grow</p>
           {industries.map((item) => (
             <a
               href="#industries"

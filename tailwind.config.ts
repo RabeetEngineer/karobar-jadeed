@@ -39,7 +39,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Satoshi", "Inter", "ui-sans-serif", "system-ui"],
+        display: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       keyframes: {
         float: {

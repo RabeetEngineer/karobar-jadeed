@@ -16,10 +16,12 @@ export function CTA() {
           <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_72%_35%,rgba(16,185,129,0.45),transparent_22%),repeating-radial-gradient(circle_at_68%_42%,rgba(255,255,255,0.18)_0_1px,transparent_1px_14px)]" />
           <div className="relative z-10 grid gap-10 lg:grid-cols-[0.85fr_1fr_0.75fr] lg:items-center">
             <div>
-              <h2 className="font-display text-4xl font-black leading-tight tracking-tight sm:text-5xl">
-                Ready to <span className="text-emerald-400">Grow</span> Your Business?
+              <h2 className="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+                Ready to Build a <span className="text-emerald-400">Smarter Business System?</span>
               </h2>
-              <p className="mt-5 max-w-md text-base font-medium leading-7 text-white/82">Website, automation, leads. One plan.</p>
+              <p className="mt-5 max-w-md text-base font-medium leading-7 text-white/82">
+                Book a free consultation and we will guide you on the best website, chatbot, CRM, or automation setup for your business.
+              </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
               {points.map((point) => (
@@ -28,7 +30,7 @@ export function CTA() {
                     <point.icon className="h-6 w-6" />
                   </span>
                   <span>
-                    <span className="block text-sm font-black">{point.title}</span>
+                    <span className="block text-sm font-extrabold">{point.title}</span>
                     <span className="mt-1 block text-xs font-medium text-white/70">{point.text}</span>
                   </span>
                 </div>
@@ -41,7 +43,7 @@ export function CTA() {
                 </a>
               </Button>
               <div className="mt-5 rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
-                <div className="flex items-center justify-between text-xs font-black text-white/70">
+                <div className="flex items-center justify-between text-xs font-extrabold text-white/70">
                   <span className="flex items-center gap-2"><MessageCircle className="h-4 w-4" /> Inquiry</span>
                   <ArrowRight className="h-4 w-4" />
                   <span>Plan</span>

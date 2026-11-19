@@ -13,8 +13,9 @@ import { motion } from "framer-motion";
 const steps = [
   { label: "Website", text: "Visitor lands", icon: Globe2, color: "text-blue-600 bg-blue-50" },
   { label: "WhatsApp", text: "Inquiry captured", icon: MessageCircle, color: "text-emerald-600 bg-emerald-50" },
-  { label: "CRM", text: "Follow-up saved", icon: UsersRound, color: "text-violet-600 bg-violet-50" },
-  { label: "Booking", text: "Customer confirmed", icon: CalendarCheck, color: "text-orange-600 bg-orange-50" },
+  { label: "CRM", text: "Lead saved", icon: UsersRound, color: "text-violet-600 bg-violet-50" },
+  { label: "Booking", text: "Consultation confirmed", icon: CalendarCheck, color: "text-orange-600 bg-orange-50" },
+  { label: "Follow-up", text: "Next step automated", icon: Bot, color: "text-cyan-600 bg-cyan-50" },
 ];
 
 export function HeroVisual() {
@@ -37,16 +38,16 @@ export function HeroVisual() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-white/92 p-4 shadow-glass backdrop-blur">
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-emerald-800">Business Growth System</p>
-                <p className="mt-1 text-lg font-black text-slate-950">Website + leads + follow-ups</p>
+                  <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-emerald-800">Business Growth System</p>
+                  <p className="mt-1 text-lg font-extrabold text-slate-900">From visitor to customer</p>
               </div>
             </div>
 
             <div className="bg-white p-5">
               <div className="mb-5 flex items-center justify-between">
                 <div>
-                  <p className="text-xs font-black uppercase tracking-[0.16em] text-slate-600">Live Flow</p>
-                  <h3 className="mt-1 text-xl font-black text-slate-950">From visitor to customer</h3>
+                  <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-600">Live Flow</p>
+                  <h3 className="mt-1 text-xl font-extrabold text-slate-900">From visitor to customer</h3>
                 </div>
                 <span className="grid h-11 w-11 place-items-center rounded-2xl bg-slate-950 text-white">
                   <MousePointerClick className="h-5 w-5" />
@@ -65,7 +66,7 @@ export function HeroVisual() {
                       <step.icon className="h-5 w-5" />
                     </span>
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm font-black text-slate-950">{step.label}</p>
+                      <p className="text-sm font-extrabold text-slate-900">{step.label}</p>
                       <p className="text-xs font-bold text-slate-600">{step.text}</p>
                     </div>
                     {index === steps.length - 1 ? <Check className="h-5 w-5 text-emerald-600" /> : null}
@@ -77,10 +78,10 @@ export function HeroVisual() {
                 {[
                   ["Leads", "256"],
                   ["Reply", "2 min"],
-                  ["Growth", "+42%"],
+                  ["Status", "Tracked"],
                 ].map(([label, value]) => (
                   <div key={label} className="rounded-2xl bg-emerald-50 p-3">
-                    <p className="text-lg font-black text-slate-950">{value}</p>
+                    <p className="text-lg font-extrabold text-slate-900">{value}</p>
                     <p className="text-[10px] font-extrabold text-slate-600">{label}</p>
                   </div>
                 ))}
@@ -101,7 +102,7 @@ export function HeroVisual() {
                 <Bot className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-sm font-black text-slate-950">AI follow-up sent</p>
+                <p className="text-sm font-extrabold text-slate-900">AI follow-up sent</p>
                 <p className="text-xs font-bold text-slate-600">Lead added to CRM automatically</p>
               </div>
             </div>
