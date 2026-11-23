@@ -1,18 +1,26 @@
 import { Link } from "react-router-dom";
-import { LogoMark } from "./LogoMark";
+import logoImg from "@/assets/karobar-jadeed-logo.png";
+import { cn } from "@/lib/utils";
 
-export function Logo() {
+type LogoProps = {
+  variant?: "navbar" | "footer";
+};
+
+export function Logo({ variant = "navbar" }: LogoProps) {
+  const isFooter = variant === "footer";
+
   return (
-    <Link to="/" className="flex items-center gap-3" aria-label="Karobar Jadeed home">
-      <LogoMark className="h-12 w-12" />
-      <span className="leading-none">
-        <span className="block font-display text-lg font-extrabold tracking-tight text-slate-900 sm:text-xl">
-          KAROBAR JADEED
-        </span>
-        <span className="mt-1 flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.2em] text-slate-700">
-          Digital Solutions
-        </span>
-      </span>
+    <Link to="/" className="inline-flex shrink-0 items-center" aria-label="Karobar Jadeed home">
+      <img
+        src={logoImg}
+        alt="Karobar Jadeed — AI Automation"
+        width={isFooter ? 130 : 88}
+        height={isFooter ? 88 : 60}
+        className={cn(
+          "w-auto object-contain mix-blend-multiply",
+          isFooter ? "h-20 sm:h-24" : "h-12 sm:h-14",
+        )}
+      />
     </Link>
   );
 }

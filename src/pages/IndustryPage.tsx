@@ -19,7 +19,7 @@ function IndustrySystemVisual({ industry }: { industry: (typeof industries)[numb
 
   return (
     <div className="relative overflow-hidden rounded-[30px] bg-slate-950 p-4 text-white shadow-lift">
-      <img src={industry.image} alt={`${industry.title} business workflow`} className="absolute inset-0 h-full w-full object-cover opacity-25" loading="eager" />
+      <img src={industry.image} alt={`${industry.title} business workflow`} width={1200} height={800} decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="eager" />
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950/88 to-emerald-950/80" />
       <div className="relative z-10 rounded-[24px] border border-white/10 bg-white/10 p-5 backdrop-blur">
         <div className="flex items-start justify-between gap-4">

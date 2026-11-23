@@ -19,7 +19,7 @@ export function CTA() {
               <h2 className="font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
                 Ready to Build a <span className="text-emerald-400">Smarter Business System?</span>
               </h2>
-              <p className="mt-5 max-w-md text-base font-medium leading-7 text-white/82">
+              <p className="mt-5 max-w-md text-base font-medium leading-7 text-white/80">
                 Book a free consultation and we will guide you on the best website, chatbot, CRM, or automation setup for your business.
               </p>
             </div>

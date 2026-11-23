@@ -1,6 +1,8 @@
 export type BlogPost = {
   body: { heading: string; paragraphs: string[] }[];
   cta: string;
+  dateModified: string;
+  datePublished: string;
   excerpt: string;
   faqs: { answer: string; question: string }[];
   metaDescription: string;
@@ -13,6 +15,8 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "why-every-business-needs-a-website",
+    datePublished: "2026-01-15",
+    dateModified: "2026-11-01",
     title: "Why Every Business Needs a Professional Website in 2026",
     seoTitle: "Why Every Business Needs a Professional Website in 2026 | Karobar Jadeed",
     metaDescription:
@@ -50,6 +54,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ai-chatbots-for-small-businesses",
+    datePublished: "2026-02-04",
+    dateModified: "2026-11-01",
     title: "How AI Chatbots Help Small Businesses Reply Faster and Capture More Leads",
     seoTitle: "AI Chatbots for Small Businesses | Karobar Jadeed",
     metaDescription:
@@ -87,6 +93,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "whatsapp-automation-for-business",
+    datePublished: "2026-02-18",
+    dateModified: "2026-11-01",
     title: "WhatsApp Automation for Business: How to Manage Leads and Follow-Ups",
     seoTitle: "WhatsApp Automation for Business Leads and Follow-Ups | Karobar Jadeed",
     metaDescription:
@@ -123,6 +131,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "clinic-management-software-guide",
+    datePublished: "2026-03-05",
+    dateModified: "2026-11-01",
     title: "Clinic Management Software: Features Every Clinic Should Have",
     seoTitle: "Clinic Management Software Features Guide | Karobar Jadeed",
     metaDescription:
@@ -159,6 +169,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "school-management-software-guide",
+    datePublished: "2026-03-19",
+    dateModified: "2026-11-01",
     title: "School Management Software: A Practical Guide for Institutes",
     seoTitle: "School Management Software Practical Guide | Karobar Jadeed",
     metaDescription:
@@ -195,6 +207,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "google-business-profile-optimization",
+    datePublished: "2026-04-02",
+    dateModified: "2026-11-01",
     title: "How Google Business Profile Helps Local Businesses Get More Customers",
     seoTitle: "Google Business Profile Optimization for Local Businesses | Karobar Jadeed",
     metaDescription:

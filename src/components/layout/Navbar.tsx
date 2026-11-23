@@ -33,12 +33,12 @@ export function Navbar() {
         className={cn(
           "container-page relative flex h-20 items-center justify-between gap-5 rounded-[28px] border transition-all duration-500",
           scrolled
-            ? "border-white/70 bg-white/88 shadow-[0_18px_60px_rgba(15,23,42,0.10)] backdrop-blur-2xl"
+            ? "border-white/70 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.10)] backdrop-blur-2xl"
             : "border-transparent bg-white/45 backdrop-blur-xl",
         )}
       >
         <div className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-emerald-300/80 to-transparent" />
-        <Logo />
+        <Logo variant="navbar" />
 
         <nav className="hidden items-center gap-4 lg:flex xl:gap-6">
           <NavLink
@@ -132,7 +132,14 @@ export function Navbar() {
           </Button>
         </div>
 
-        <Button variant="secondary" size="icon" className="lg:hidden" onClick={() => setOpen((value) => !value)}>
+        <Button
+          variant="secondary"
+          size="icon"
+          className="lg:hidden"
+          onClick={() => setOpen((value) => !value)}
+          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={open}
+        >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </Button>
       </div>

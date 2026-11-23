@@ -1,10 +1,15 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Logo } from "@/components/brand/Logo";
 import { GbpMapEmbed } from "@/components/shared/GbpMapEmbed";
 import { contact } from "@/config/contact";
 import { industries } from "@/data/industries";
 import { services } from "@/data/services";
+
+const socialLinks = [
+  { label: "Karobar Jadeed on Instagram", href: contact.socialProfiles.instagram, icon: Instagram },
+  { label: "Karobar Jadeed on Facebook", href: contact.socialProfiles.facebook, icon: Facebook },
+];
 
 const companyLinks = [
   { label: "About", href: "/about" },
@@ -20,17 +25,19 @@ export function Footer() {
     <footer className="border-t border-slate-100 bg-[#f8fbff] py-12">
       <div className="container-page grid gap-10 lg:grid-cols-[1.15fr_0.95fr_0.95fr_0.85fr_1.1fr]">
         <div>
-          <Logo />
+          <Logo variant="footer" />
           <p className="mt-5 max-w-sm text-sm font-medium leading-6 text-slate-600">
             Karobar Jadeed Digital Solutions is a Pakistan-based software company helping local and international
             businesses build websites, AI automation, CRM systems, WhatsApp workflows, and custom software.
           </p>
           <div className="mt-6 flex gap-3">
-            {[Facebook, Instagram, Linkedin].map((Icon, index) => (
+            {socialLinks.map(({ label, href, icon: Icon }) => (
               <a
-                key={index}
-                href="/contact"
-                aria-label="Karobar Jadeed social profile"
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
                 className="grid h-10 w-10 place-items-center rounded-full bg-white text-slate-700 shadow-sm hover:text-emerald-600"
               >
                 <Icon className="h-5 w-5" />

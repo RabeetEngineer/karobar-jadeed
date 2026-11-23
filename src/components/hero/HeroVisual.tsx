@@ -34,10 +34,13 @@ export function HeroVisual() {
               <img
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
                 alt="Business team reviewing digital growth dashboard"
+                width={900}
+                height={600}
+                decoding="async"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-white/92 p-4 shadow-glass backdrop-blur">
+              <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-white/95 p-4 shadow-glass backdrop-blur">
                   <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-emerald-800">Business Growth System</p>
                   <p className="mt-1 text-lg font-extrabold text-slate-900">From visitor to customer</p>
               </div>
@@ -47,7 +50,7 @@ export function HeroVisual() {
               <div className="mb-5 flex items-center justify-between">
                 <div>
                   <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-600">Live Flow</p>
-                  <h3 className="mt-1 text-xl font-extrabold text-slate-900">From visitor to customer</h3>
+                  <p className="mt-1 text-xl font-extrabold text-slate-900">From visitor to customer</p>
                 </div>
                 <span className="grid h-11 w-11 place-items-center rounded-2xl bg-slate-950 text-white">
                   <MousePointerClick className="h-5 w-5" />
@@ -91,7 +94,7 @@ export function HeroVisual() {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-5 left-5 right-5 z-20 rounded-3xl border border-white/80 bg-white/92 p-4 shadow-lift backdrop-blur-2xl sm:left-10 sm:right-10"
+          className="relative z-20 mt-4 rounded-3xl border border-white/80 bg-white/95 p-4 shadow-lift backdrop-blur-2xl sm:mx-4"
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 0.65 }}

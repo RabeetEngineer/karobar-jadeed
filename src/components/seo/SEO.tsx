@@ -6,6 +6,7 @@ type SeoProps = {
   description: string;
   image?: string;
   jsonLd?: Record<string, unknown>[];
+  robots?: string;
   title: string;
   type?: "website" | "article";
 };
@@ -38,15 +39,23 @@ function setLink(rel: string, href: string) {
   element.href = href;
 }
 
-export function SEO({ canonicalPath = "/", description, image, jsonLd = [], title, type = "website" }: SeoProps) {
+export function SEO({
+  canonicalPath = "/",
+  description,
+  image,
+  jsonLd = [],
+  robots = "index, follow",
+  title,
+  type = "website",
+}: SeoProps) {
   useEffect(() => {
     const canonical = `${contact.siteUrl}${canonicalPath === "/" ? "/" : canonicalPath}`;
-    const socialImage =
-      image ?? "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80";
+    const socialImage = image ?? `${contact.siteUrl}/logo.png`;
 
     document.title = title;
     setMeta('meta[name="description"]', "content", description);
-    setMeta('meta[name="robots"]', "content", "index, follow");
+    setMeta('meta[name="robots"]', "content", robots);
+    setMeta('meta[property="og:site_name"]', "content", "Karobar Jadeed");
     setMeta('meta[property="og:title"]', "content", title);
     setMeta('meta[property="og:description"]', "content", description);
     setMeta('meta[property="og:type"]', "content", type);
@@ -66,7 +75,7 @@ export function SEO({ canonicalPath = "/", description, image, jsonLd = [], titl
       script.text = JSON.stringify(schema);
       document.head.appendChild(script);
     });
-  }, [canonicalPath, description, image, jsonLd, title, type]);
+  }, [canonicalPath, description, image, jsonLd, robots, title, type]);
 
   return null;
 }
@@ -106,6 +115,9 @@ export function baseSchemas() {
       "@type": ["SoftwareCompany", "LocalBusiness"],
       name: "Karobar Jadeed",
       url: `${contact.siteUrl}/`,
+      image: `${contact.siteUrl}/logo.png`,
+      logo: `${contact.siteUrl}/logo.png`,
+      priceRange: "$$",
       telephone: contact.phoneSchema,
       email: contact.email,
       address: {
@@ -114,8 +126,21 @@ export function baseSchemas() {
         addressRegion: "Punjab",
         addressCountry: "PK",
       },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 31.5204,
+        longitude: 74.3587,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          opens: "09:00",
+          closes: "21:00",
+        },
+      ],
       areaServed: areaServedList,
-      sameAs: [],
+      sameAs: [contact.socialProfiles.instagram, contact.socialProfiles.facebook],
       knowsAbout: coreOfferings,
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -136,11 +161,6 @@ export function baseSchemas() {
       "@type": "WebSite",
       name: "Karobar Jadeed",
       url: `${contact.siteUrl}/`,
-      potentialAction: {
-        "@type": "SearchAction",
-        target: `${contact.siteUrl}/blog?search={search_term_string}`,
-        "query-input": "required name=search_term_string",
-      },
     },
   ];
 }

@@ -29,8 +29,8 @@ export function IndustriesIndexPage() {
           {industries.map((industry) => (
             <Link key={industry.slug} to={`/industries/${industry.slug}`} className="group overflow-hidden rounded-[24px] border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-glass">
               <div className="relative h-44">
-                <img src={industry.image} alt={`${industry.title} solution preview`} className="h-full w-full object-cover" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/72 to-transparent" />
+                <img src={industry.image} alt={`${industry.title} solution preview`} width={600} height={400} decoding="async" className="h-full w-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 to-transparent" />
                 <h2 className="absolute bottom-4 left-4 right-4 text-xl font-extrabold text-white">{industry.title}</h2>
               </div>
               <div className="p-5">

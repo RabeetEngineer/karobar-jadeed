@@ -10,8 +10,19 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-[linear-gradient(90deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.88)_38%,rgba(255,255,255,0.52)_100%),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center pt-28 sm:pt-32"
+      className="relative overflow-hidden bg-gradient-to-br from-white via-[#f7fbff] to-emerald-50/40 pt-28 sm:pt-32"
     >
+      <img
+        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=70"
+        alt=""
+        aria-hidden="true"
+        width={1200}
+        height={675}
+        decoding="async"
+        fetchPriority="high"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-15"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/45" />
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-35 [mask-image:radial-gradient(circle_at_top_left,black,transparent_56%)]" />
       <div className="container-page grid min-h-[690px] min-w-0 items-center gap-9 pb-12 lg:grid-cols-[minmax(0,0.98fr)_minmax(0,1.02fr)] lg:gap-12 lg:pb-16">
         <motion.div

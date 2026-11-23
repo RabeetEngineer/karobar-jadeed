@@ -27,13 +27,13 @@ export function ServicesIndexPage() {
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
-            <Link key={service.slug} to={`/services/${service.slug}`} className="group rounded-[24px] border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-glass">
+            <Link key={service.slug} to={`/services/${service.slug}`} className="group flex flex-col rounded-[24px] border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-glass">
               <span className="grid h-12 w-12 place-items-center rounded-2xl bg-emerald-50 text-emerald-700">
                 <service.icon className="h-6 w-6" />
               </span>
               <h2 className="mt-5 text-xl font-extrabold text-slate-900">{service.title}</h2>
-              <p className="mt-3 line-clamp-3 text-sm font-medium leading-6 text-slate-600">{service.description}</p>
-              <span className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-emerald-700">
+              <p className="mt-3 text-sm font-medium leading-6 text-slate-600">{service.description}</p>
+              <span className="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-extrabold text-emerald-700">
                 Open service <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </span>
             </Link>

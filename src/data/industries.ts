@@ -45,6 +45,50 @@ export const industries: Industry[] = [
     ],
   },
   {
+    title: "Online Quran Academies",
+    slug: "online-quran-academies",
+    image: "https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=1200&q=80",
+    built: "Trial class booking, international fee plans, WhatsApp & student CRM",
+    result: "More international student enrollments",
+    tags: ["Trial Booking", "WhatsApp", "Student CRM"],
+    accent: "from-emerald-600 to-cyan-600",
+    seoTitle: "Online Quran Academy Website, Trial Booking & Student CRM | Karobar Jadeed",
+    seoDescription:
+      "Websites, free trial class booking, WhatsApp automation, and student/teacher CRM systems for Online Quran Academies serving UK, US, Canada, and global families.",
+    detail:
+      "We help Online Quran Academies attract overseas students in the UK, US, Canada, and Australia with SEO-ready websites, trial class booking, WhatsApp follow-ups, and student management.",
+    problem:
+      "Quran academies often struggle with scattered WhatsApp inquiries across time zones, missed trial follow-ups, and websites that do not build enough trust for international parents.",
+    solution:
+      "Karobar Jadeed builds a credible academy website with timezone-aware trial booking, automated WhatsApp follow-ups, and a student CRM to track classes and monthly fee reminders.",
+    features: [
+      "Free trial class booking forms",
+      "Course pages (Nazra, Hifz, Tajweed, Islamic Studies)",
+      "Automated WhatsApp parent follow-ups",
+      "Student & teacher schedule CRM",
+      "International SEO for UK, US & Canada searches",
+    ],
+    exampleWorkflow: [
+      "Parent in UK/US finds academy on Google",
+      "Free trial class form is submitted",
+      "Instant WhatsApp confirmation & class time sent",
+      "Student is logged in CRM and assigned a tutor",
+      "Automated monthly fee & attendance reminders run",
+    ],
+    recommendedServices: ["website-development", "whatsapp-automation", "crm-lead-management", "seo-google-business-profile"],
+    cta: "Grow your Online Quran Academy",
+    faqs: [
+      {
+        question: "Can parents from the UK, US, and Canada book trial classes easily?",
+        answer: "Yes. We design clear course pages, currency/plan tables, and simple trial booking forms connected directly to WhatsApp and your CRM.",
+      },
+      {
+        question: "Can you automate student follow-ups and monthly fee reminders?",
+        answer: "Yes. We can set up WhatsApp automation and CRM pipelines to track trial students, active classes, and renewal reminders.",
+      },
+    ],
+  },
+  {
     title: "Schools & Institutes",
     slug: "schools-institutes",
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
@@ -95,31 +139,6 @@ export const industries: Industry[] = [
     ],
   },
   {
-    title: "Travel Agencies",
-    slug: "travel-agencies",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
-    built: "Package pages, inquiry forms, lead CRM",
-    result: "Cleaner trip inquiries",
-    tags: ["Packages", "Leads", "CRM"],
-    accent: "from-sky-500 to-blue-600",
-    seoTitle: "Travel Agency Website & Inquiry Management Software | Karobar Jadeed",
-    seoDescription:
-      "Travel agency websites, package pages, inquiry forms, WhatsApp automation, CRM, and follow-up systems for travel businesses.",
-    detail:
-      "We help travel agencies display packages professionally, capture trip inquiries, route WhatsApp messages, and track follow-ups.",
-    problem: "Travel inquiries need fast replies, accurate package details, and follow-up tracking, but many teams manage them manually.",
-    solution:
-      "A package website connected with inquiry forms, WhatsApp, and CRM helps your team respond faster and organize opportunities.",
-    features: ["Package landing pages", "Inquiry forms", "WhatsApp follow-ups", "Lead pipeline", "Campaign-ready contact lists"],
-    exampleWorkflow: ["Visitor views package", "Inquiry form captures travel date", "WhatsApp follow-up starts", "CRM tracks status", "Agent sends final quote"],
-    recommendedServices: ["website-development", "whatsapp-automation", "crm-lead-management", "seo-google-business-profile"],
-    cta: "Organize travel agency inquiries",
-    faqs: [
-      { question: "Can we add multiple tour packages?", answer: "Yes. Packages can include itinerary, pricing, images, FAQs, and inquiry CTAs." },
-      { question: "Can agents track inquiry status?", answer: "Yes. We can build a CRM flow for new, contacted, quoted, and booked inquiries." },
-    ],
-  },
-  {
     title: "Real Estate",
     slug: "real-estate",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
@@ -167,6 +186,31 @@ export const industries: Industry[] = [
     faqs: [
       { question: "Can you build a full online store?", answer: "Yes. We can create catalog, product, cart, checkout, or inquiry-based ecommerce flows." },
       { question: "Can products be SEO optimized?", answer: "Yes. We structure categories, product copy, metadata, and internal links for search visibility." },
+    ],
+  },
+  {
+    title: "Travel Agencies",
+    slug: "travel-agencies",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
+    built: "Package pages, inquiry forms, lead CRM",
+    result: "Cleaner trip inquiries",
+    tags: ["Packages", "Leads", "CRM"],
+    accent: "from-sky-500 to-blue-600",
+    seoTitle: "Travel Agency Website & Inquiry Management Software | Karobar Jadeed",
+    seoDescription:
+      "Travel agency websites, package pages, inquiry forms, WhatsApp automation, CRM, and follow-up systems for travel businesses.",
+    detail:
+      "We help travel agencies display packages professionally, capture trip inquiries, route WhatsApp messages, and track follow-ups.",
+    problem: "Travel inquiries need fast replies, accurate package details, and follow-up tracking, but many teams manage them manually.",
+    solution:
+      "A package website connected with inquiry forms, WhatsApp, and CRM helps your team respond faster and organize opportunities.",
+    features: ["Package landing pages", "Inquiry forms", "WhatsApp follow-ups", "Lead pipeline", "Campaign-ready contact lists"],
+    exampleWorkflow: ["Visitor views package", "Inquiry form captures travel date", "WhatsApp follow-up starts", "CRM tracks status", "Agent sends final quote"],
+    recommendedServices: ["website-development", "whatsapp-automation", "crm-lead-management", "seo-google-business-profile"],
+    cta: "Organize travel agency inquiries",
+    faqs: [
+      { question: "Can we add multiple tour packages?", answer: "Yes. Packages can include itinerary, pricing, images, FAQs, and inquiry CTAs." },
+      { question: "Can agents track inquiry status?", answer: "Yes. We can build a CRM flow for new, contacted, quoted, and booked inquiries." },
     ],
   },
   {
